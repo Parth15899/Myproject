@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCart"
+    android:orientation="vertical"
+    android:weightSum="5"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:id="@+id/lvpb"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="235dp">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgempty"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/bag"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/txtempty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Bag Seems Light. Add Products To make it heavy and look good."
+        />
+    <GridView
+        android:layout_weight="4"
+        android:visibility="gone"
+        android:id="@+id/lvcart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="#e5e5e5"
+        android:clickable="false"
+        android:divider="@color/colorPrimary"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        >
+
+        <TextView
+            android:gravity="top"
+            android:layout_gravity="top"
+            android:id="@+id/delto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivering to : "
+            android:textColor="#494545"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="566dp" />
+
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#EEEEEE"
+            android:text="Address Here.."
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="566dp" />
+
+        <Button
+            android:id="@+id/btnAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:text="Change Address"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnproceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button"
+            android:text="Proceed to Checkout"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

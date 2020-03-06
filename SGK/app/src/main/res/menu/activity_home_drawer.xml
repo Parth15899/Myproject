@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+
+        android:id="@+id/topmenu">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeicol"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/caticol"
+            android:title="Browse By Category"/>
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/finaloffericol"
+            android:title="Lightning Deals"
+            />
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/producticol"
+            android:title="Store"/>
+        <item
+            android:id="@+id/nav_myorders"
+            android:icon="@drawable/myordersicol"
+            android:title="My Orders"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/deactivicol"
+            android:title="Deactivate Account"
+            />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/bottommenu">
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contacticol"
+            android:title="Contact Us"
+            >
+
+        </item>
+
+        <item
+            android:id="@+id/tnc"
+            android:icon="@drawable/termsicol"
+            android:title="Terms and Conditions"
+            />
+    </group>
+</menu>

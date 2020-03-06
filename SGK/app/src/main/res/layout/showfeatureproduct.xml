@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        >
+
+    <ImageView
+        android:id="@+id/imageFeatureProd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_weight="1"
+        android:src="@drawable/logo"
+        android:background="@drawable/imageproduct"
+
+        />
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textFeatureProduct"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:text="Name"
+            android:textSize="15dp"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+
+
+            />
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textFeatureRupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="@string/rupee"
+                android:layout_marginLeft="00dp"
+                android:layout_marginTop="0dp"
+                />
+            <TextView
+                android:id="@+id/textFeaturePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Price"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/featureAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="00dp"
+        android:background="@drawable/button"
+        android:text="+"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:drawableLeft="@drawable/cico"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+</LinearLayout>
+

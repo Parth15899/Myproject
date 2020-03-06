@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.SGK.sgk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.SGK.sgk.DeliveryProducts"></activity>
+        <activity android:name="com.SGK.sgk.UndispatchOrder" />
+        <activity android:name="com.SGK.sgk.ErrorConnection" />
+        <activity
+            android:name="com.SGK.sgk.ContactUs"
+            android:theme="@style/noActionBar" />
+        <activity android:name="com.SGK.sgk.ProductCat"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Product"
+            />
+        <activity android:name="com.SGK.sgk.Terms" />
+        <activity android:name="com.SGK.sgk.ConfirmOrder" />
+        <activity android:name="com.SGK.sgk.AddAddress" />
+        <activity android:name="com.SGK.sgk.SubCategory" />
+        <activity android:name="com.SGK.sgk.searchAct" />
+        <activity android:name="com.SGK.sgk.DeliveryAct" />
+        <activity
+            android:name="com.SGK.sgk.ShoppingCart"
+            android:icon="@drawable/logo"
+            android:label="Cart" />
+        <activity android:name="com.SGK.sgk.productDetails" />
+        <activity
+            android:name="com.SGK.sgk.Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.SGK.sgk.MyOrders"
+            android:label="@string/title_activity_my_orders"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.SGK.sgk.Product"
+            android:icon="@drawable/logo"
+            android:label="@string/title_activity_product"
+            android:roundIcon="@drawable/logo"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.SGK.sgk.offers"
+            android:label="@string/title_activity_offers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.SGK.sgk.Act_Category"
+            android:label="@string/title_activity_act__category"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.SGK.sgk.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.SGK.sgk.homepage" />
+        <activity android:name="com.SGK.sgk.verifysignotp" />
+        <activity
+            android:name="com.SGK.sgk.changepass"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.SGK.sgk.verifyfpotp"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.SGK.sgk.fpass"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.SGK.sgk.Login"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.SGK.sgk.SignUp"
+            android:theme="@style/noActionBar" />
+        <activity android:name="com.SGK.sgk.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

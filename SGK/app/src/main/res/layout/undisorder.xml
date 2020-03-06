@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageundisorder"
+        android:layout_margin="15dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:background="@drawable/imageproduct"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pnameundisorder"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Name"
+            android:layout_gravity="center"
+            android:textColor="#494545" />
+
+
+
+        <Button
+            android:id="@+id/cancelorder"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="25dp"
+            android:text="Cancel"
+            android:focusable="false"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/prupeecart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/rupee"
+                    android:textColor="#000"
+                    android:layout_gravity="top"
+                    />
+
+                <TextView
+                    android:id="@+id/ppriceundisorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+
+                    android:text="Price"
+                    android:textColor="#000"
+                    android:layout_gravity="top"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ptotalcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="15dp"
+                    android:text="Total : "
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/ptotalrupeecart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/rupee"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/ptotalundisorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="15dp"
+                    android:text="Price"
+                    android:textColor="#000" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
